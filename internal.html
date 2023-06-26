@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Inline CSS</title>
+
+    <style>
+        
+        /* Membuat style menggunakan "Element Selector" */
+        
+        header {
+            background-color: yellow;
+        }
+
+        header, nav, section, footer {
+            padding: 30px;
+            border-style: solid;
+        }
+
+        /* Membuat style menggunakan "id selector" */
+
+        #navigation {
+            background-color: aqua;
+        }
+
+        #navigation ul {
+            border-style: dotted;
+            border-width: 5px;
+            padding: 0;
+            height: 60px;
+        }
+
+        #navigation ul li {
+            list-style: none;
+            padding: 20px;
+            float: left;
+        }
+
+
+        /* Membuat style menggunakan "class selector" */
+
+        .mainFooter {
+            background-color: black;
+            color: white;
+        }
+
+        .text-yellow {
+            color: yellow;
+        }
+
+        .text-blue{
+            color: blue;
+        }
+
+        .text-red {
+            color: red;
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+
+    <!-- header start -->
+    <header id="header">
+
+        <h1>SaCode</h1>
+        <p>Belajar Dasar Coding HTML & CSS</p>
+
+    </header>
+    <!-- header end -->
+
+    <!-- nav start -->
+    <nav id="navigation">
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="inline.html">Inline</a>
+            </li>
+            <li>
+                <a href="internal.html">Internal</a>
+            </li>
+            <li>
+                <a href="external.html">External</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- nav end -->
+
+    <!-- section start -->
+    <section class="text-red">
+
+        <h1>Internal CSS</h1>
+
+        <p>Belajar menerapkan CSS dengan cara Internal.</p>
+
+    </section>
+    <!-- section end -->
+
+
+    <!-- footer start -->
+    <footer class="mainFooter">
+        <p>
+            Copyright &copy; 2023 - Designed by <b class="text-yellow">Janzen Faidiban</b>
+        </p>
+    </footer>
+    <!-- footer end -->
+
+</body>
+</html>
